@@ -1,11 +1,14 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import MainComponent from "./components/MainComponent";
 
 function App() {
   return (
-    <div>
-      <MainComponent />
-    </div>
+    <BrowserRouter basename="/php-portal">
+      <div>
+        <MainComponent />
+      </div>
+    </BrowserRouter>
   );
 }
 
